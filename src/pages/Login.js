@@ -26,6 +26,7 @@ const Login = ({setName}) => {
             setSuccess("Login Success!");
             const content = await response.json();
             setName(content.name);
+            console.log(response.data);
             navigate("/")
             window.location.reload();
         }
