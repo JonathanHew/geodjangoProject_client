@@ -73,7 +73,7 @@ const Map = ({ id }) => {
     let locString = pos.coords.longitude + ", " + pos.coords.latitude;
 
     try {
-      await fetch(`${process.env.REACT_APP_API_POINT}/api/updateProfile`, {
+      await fetch(`${process.env.REACT_APP_API_END_POINT}/api/updateProfile`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
